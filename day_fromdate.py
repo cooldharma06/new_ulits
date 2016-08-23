@@ -25,7 +25,7 @@ def first_lastday(year_inp, month_inp):
     print(date_inp,'-',month_inp,'-',year_inp,'..week day is ..', \
           weekday[dateFinder(year_inp, month_inp, date_inp)])
     print('First day of the month is ...',weekday[first_day+1])
-    print('Last day of the month is ...',weekday[dateFinder(year_inp, month_inp,number_days)])
+    print('Last day of the month is .',number_days,'..',weekday[dateFinder(year_inp, month_inp,number_days)])
     print('Number of days in the month...',number_days)
 
 
@@ -38,5 +38,20 @@ month_inp = int(input('Enter the month..'))
 year_inp = int(input('Enter the year..'))
     
 main()
-    
+
+'''
+sample output
+
+ ================================ RESTART ================================
+>>> 
+Enter the date..6
+Enter the month..2
+Enter the year..2001
+3
+6 - 2 - 2001 ..week day is .. Tuesday
+First day of the month is ... Thursday
+Last day of the month is . 28 .. Wednesday
+Number of days in the month... 28
+
+'''
 
